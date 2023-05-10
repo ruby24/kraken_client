@@ -30,7 +30,8 @@ module KrakenClient
           :TradeVolume   => :trade_volume,
           :AddOrder      => [:add_order,     params: [:pair, :type, :ordertype, :volume]],
           :CancelOrder   => [:cancel_order,  params: [:txid]],
-          :Withdraw      => [:withdraw,      params: [:asset, :key, :amount]]
+          :WithdrawInfo  => [:withdraw_info, params: [:asset, :key, :amount]]
+          :Withdraw      => [:withdraw,      params: [:asset, :key, :amount]],
         }
       end
 
